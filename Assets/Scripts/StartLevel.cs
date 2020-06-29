@@ -71,7 +71,13 @@ public class StartLevel : MonoBehaviour
             Time.timeScale = 1f;
 
         }
+        if (Input.GetKey(KeyCode.Joystick1Button1))
+        {
 
+            canvasObject.SetActive(false);
+            Time.timeScale = 1f;
+
+        }
 
     }
 

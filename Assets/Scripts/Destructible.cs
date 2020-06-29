@@ -4,6 +4,7 @@ public class Destructible : MonoBehaviour
 {
     
     public GameObject destroyedVersion;
+    
 
     void OnCollisionEnter(Collision collisionInfo)
     {
@@ -14,9 +15,7 @@ public class Destructible : MonoBehaviour
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             Destroy(gameObject);
             Uicubecounter.numberOfCubes  += 0.5 ;
-            SoundManager.PlaySound("powerup");
-
-
+            
         }
         
         if (collisionInfo.collider.tag == "Player")
@@ -25,8 +24,7 @@ public class Destructible : MonoBehaviour
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             Destroy(gameObject);
             Uicubecounter.numberOfCubes += 0.5;
-            SoundManager.PlaySound("powerup");
-
+            
         }
         
     }

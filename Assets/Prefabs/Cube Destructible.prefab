@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -3771797330484287370}
   m_Layer: 13
   m_Name: Cube Destructible
-  m_TagString: Untagged
+  m_TagString: cubedestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,6 +60,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -107,9 +108,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &8658856030520644100
 Rigidbody:
@@ -141,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyedVersion: {fileID: 1075345190804171158, guid: 4b4089a55294ea74abb08dbf9fef61b5,
     type: 3}
+  powerUp: {fileID: 0}
 --- !u!114 &3525284288429920418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,8 +167,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2362315785513932718}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 1, g: 0.77165467, b: 0.16862744, a: 0.23137255}
   m_Intensity: 1.44
   m_Range: 5

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
@@ -8,8 +9,22 @@ public class PauseMenu : MonoBehaviour
 
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    
+
+
     void Update()
     {
+        // TO PAUSE
+        if (Input.GetKey(KeyCode.Joystick1Button7))
+        {
+
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                Pause();                             
+                GetComponent<StartLevel>().enabled = false;
+            }
+        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
            
@@ -33,7 +48,20 @@ public class PauseMenu : MonoBehaviour
                 GetComponent<StartLevel>().enabled = false;
             }
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+       
+        // TO RESUME
+        if (Input.GetKey(KeyCode.Joystick1Button1))
+        {
+            if (GameIsPaused)
+            {          
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.None;
+                Resume();
+                GetComponent<StartLevel>().enabled = false;
+            }
+
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow)) 
         {
             if (GameIsPaused)
             {
@@ -55,7 +83,7 @@ public class PauseMenu : MonoBehaviour
             }
 
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))                    
         {
             if (GameIsPaused)
             {
@@ -112,7 +140,8 @@ public class PauseMenu : MonoBehaviour
     {             
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        GameIsPaused = true;
+        GameIsPaused = true;            
+        
         GetComponent<StartLevel>().enabled = false;
       
     }

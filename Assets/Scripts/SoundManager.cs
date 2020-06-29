@@ -15,9 +15,7 @@ public class SoundManager : MonoBehaviour
         ballcrashsound = Resources.Load<AudioClip>("crash");
         jumpsound = Resources.Load<AudioClip>("jump");
         landingsound = Resources.Load<AudioClip>("landing");
-        powerupsound = Resources.Load<AudioClip>("powerup");
-        
-
+        powerupsound = Resources.Load<AudioClip>("powerup");       
         audioSrc = GetComponent<AudioSource>();
 
     }

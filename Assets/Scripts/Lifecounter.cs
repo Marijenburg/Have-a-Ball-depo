@@ -196,7 +196,7 @@ public class Lifecounter : MonoBehaviour
             
         }     
         
-        Debug.Log("lives" + numberoflives);
+       
     }
     void youLost()
     {

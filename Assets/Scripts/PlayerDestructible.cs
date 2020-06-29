@@ -4,6 +4,7 @@ public class PlayerDestructible : MonoBehaviour
 {
 
     public GameObject playerDestroyed;
+    
 
     void OnCollisionEnter(Collision collisionInfo)
     {
@@ -13,7 +14,7 @@ public class PlayerDestructible : MonoBehaviour
             
             Instantiate(playerDestroyed, transform.position, transform.rotation);
             Destroy(gameObject);
-            SoundManager.PlaySound("crash");
+            
         }
        
     }
