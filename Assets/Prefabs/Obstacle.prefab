@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7051573192026553197}
   - component: {fileID: 7051573192026553199}
   - component: {fileID: 7051573192026553168}
-  - component: {fileID: 3074593603242472657}
   - component: {fileID: 387821694}
   - component: {fileID: 834542150881239814}
-  m_Layer: 11
+  - component: {fileID: -5872387189589309867}
+  m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7051573192026553169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9321976, y: 1, z: 23.93}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: -1.9321976, y: 1.2, z: 23.93}
+  m_LocalScale: {x: 1.165496, y: 1.8478652, z: 1.0621891}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,20 +73,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &3074593603242472657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7051573192026553169}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa92455e83128f14c81b63d4d7db5b86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Obstacle: {fileID: 7051573192026553168}
-  crashSound: {fileID: 834542150881239814}
 --- !u!137 &387821694
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -234,3 +220,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5872387189589309867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7051573192026553169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa92455e83128f14c81b63d4d7db5b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Obstacle: {fileID: 7051573192026553168}
+  crashSound: {fileID: 834542150881239814}
