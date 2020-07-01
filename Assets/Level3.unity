@@ -8801,7 +8801,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-594094
+  m_Name: pb_Mesh-216318
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12172,7 +12172,7 @@ PrefabInstance:
     - target: {fileID: 2677669574501919833, guid: b46908eb2ef8efa4dad77aac9fae0a35,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1473
+      value: 1289
       objectReference: {fileID: 0}
     - target: {fileID: 2677669574501919833, guid: b46908eb2ef8efa4dad77aac9fae0a35,
         type: 3}
@@ -12261,7 +12261,7 @@ PrefabInstance:
     - target: {fileID: 3906749834274322258, guid: cd1ba5094dec61446874017e0f3451bf,
         type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3906749834274322259, guid: cd1ba5094dec61446874017e0f3451bf,
         type: 3}

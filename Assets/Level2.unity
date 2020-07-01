@@ -11527,7 +11527,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-490244
+  m_Name: pb_Mesh-214404
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17610,6 +17610,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 3906749834274322258, guid: cd1ba5094dec61446874017e0f3451bf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3906749834274322259, guid: cd1ba5094dec61446874017e0f3451bf,
         type: 3}
