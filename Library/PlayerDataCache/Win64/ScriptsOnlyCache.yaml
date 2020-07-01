@@ -21,6 +21,7 @@ ScriptsOnlyBuild:
     - Score
     - StartLevel
     - StuffFallsFromtheSky
+    - Timer
     - Uicubecounter
     - cursorfortryagainscene
     - cursorinvisible
@@ -46,6 +47,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
@@ -226,7 +228,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14548}
     - Class: 114
+      Script: {instanceID: 14560}
+    - Class: 114
       Script: {instanceID: 14756}
+    - Class: 114
+      Script: {instanceID: 24816}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -349,7 +355,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14756}
     - Class: 114
-      Script: {instanceID: 15648}
+      Script: {instanceID: 17546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -472,7 +478,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14756}
     - Class: 114
-      Script: {instanceID: 15648}
+      Script: {instanceID: 17546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -495,7 +501,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Level5.unity:
+    Assets/Level4.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -595,7 +601,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14756}
     - Class: 114
-      Script: {instanceID: 15648}
+      Script: {instanceID: 17546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -618,7 +624,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Level6.unity:
+    Assets/Level5.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -833,7 +839,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14756}
     - Class: 114
-      Script: {instanceID: 15648}
+      Script: {instanceID: 17546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2291,16 +2297,22 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 4bf7310a933dd189ef5b2b4017c54b8c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
   platform: 19
   scenePathNames:
   - Assets/Menu.unity
   - Assets/Level1.unity
   - Assets/Level2.unity
   - Assets/Level3.unity
+  - Assets/Level4.unity
   - Assets/Level5.unity
-  - Assets/Level6.unity
   - Assets/Level7.unity
   - Assets/Credits.unity
   - Assets/TryAgain.unity
   playerPath: C:/Users/spike/Have a Ball/Have a ball/Builds/Windows/Have a Ball Beta
-    1.0/HAVE A BALL.exe
+    1.1/HAVE A BALL.exe

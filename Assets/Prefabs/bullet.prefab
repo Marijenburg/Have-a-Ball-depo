@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1753000481545849199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.85, y: 1, z: 35.01953}
-  m_LocalScale: {x: 2.9987, y: 2.9987, z: 2.9987}
+  m_LocalScale: {x: 1.3431, y: 1.3431, z: 1.3431}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,6 +57,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -94,9 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: -3608300814937699038}
-  force: 50000
-  timeManager: {fileID: 6630951137461119116, guid: 75ad3e09b19cea645962da22fa010605,
-    type: 3}
+  force: 30000
 --- !u!54 &-3608300814937699038
 Rigidbody:
   m_ObjectHideFlags: 0
