@@ -6917,6 +6917,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &661847846 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 260519753, guid: c5889f313d3fb0942acb2f1052e1c560,
+    type: 3}
+  m_PrefabInstance: {fileID: 944478568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &661941720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17774,6 +17786,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1645416840, guid: dca2f56e04f359b478b8d29cb3eef610, type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 661847846}
     - target: {fileID: 8640133097884634376, guid: dca2f56e04f359b478b8d29cb3eef610,
         type: 3}
       propertyPath: m_LocalPosition.x

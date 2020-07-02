@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public float timeStart ;
-    public TextMeshPro textBox;
+    public Text textBox;
 
     bool timerActive = false;
 
