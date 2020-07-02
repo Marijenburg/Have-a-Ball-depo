@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource landingSound;
     public AudioSource powerUp;
     
-    
+   
 
     void FixedUpdate()
     {
@@ -34,8 +34,7 @@ public class PlayerMovement : MonoBehaviour
         MovewithController();
         JumpWithController();
         Jump();
-        PushForward();
-       
+        PushForward();   
         RollingSound();
 
 
@@ -75,19 +74,22 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!rollingSound.isPlaying)
             {
-                if (Time.timeScale == 1f)
-                {
-                    rollingSound.Play();
-                }
-               
-                               
+                rollingSound.Play();
             }          
         }
         else
         {
             rollingSound.Stop();
         }
+       if (rollingSound.isPlaying)
+        {
+            if (Time.timeScale==0)
+            {
+                rollingSound.Pause();
+            }
+        }
     }
+   
     private void JumpWithController()
     {
         //jump with controller

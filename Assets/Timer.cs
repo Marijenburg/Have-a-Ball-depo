@@ -10,17 +10,16 @@ public class Timer : MonoBehaviour
     public Text textBox;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        textBox.text = timeStart.ToString("0.00");
-    }
+   
 
     // Update is called once per frame
     void Update()
     {
-               
-            timeStart += Time.deltaTime;
-            textBox.text = Mathf.Round(timeStart).ToString("0.00");
-       
+
+        timeStart += Time.deltaTime;
+        print(timeStart);
+        textBox.text = timeStart.ToString("0.00");
     }
+
 }
+
