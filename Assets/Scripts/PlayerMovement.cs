@@ -75,7 +75,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!rollingSound.isPlaying)
             {
-                rollingSound.Play();
+                if (Time.timeScale == 1f)
+                {
+                    rollingSound.Play();
+                }
+               
+                               
             }          
         }
         else
