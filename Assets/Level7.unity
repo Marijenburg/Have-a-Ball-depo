@@ -1500,6 +1500,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5889f313d3fb0942acb2f1052e1c560, type: 3}
+--- !u!114 &690624134 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 260519753, guid: c5889f313d3fb0942acb2f1052e1c560,
+    type: 3}
+  m_PrefabInstance: {fileID: 690624133}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &700808718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4532,6 +4544,11 @@ PrefabInstance:
       propertyPath: col
       value: 
       objectReference: {fileID: 1993629707}
+    - target: {fileID: 2937425013412629722, guid: c859dcf8e6062b741af51053f8c762d6,
+        type: 3}
+      propertyPath: jumpForce
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2937425013412629724, guid: c859dcf8e6062b741af51053f8c762d6,
         type: 3}
       propertyPath: m_Drag
@@ -6024,6 +6041,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1645416840, guid: dca2f56e04f359b478b8d29cb3eef610, type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 690624134}
     - target: {fileID: 8640133097884634376, guid: dca2f56e04f359b478b8d29cb3eef610,
         type: 3}
       propertyPath: m_LocalPosition.x

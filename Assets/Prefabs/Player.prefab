@@ -110,7 +110,7 @@ MonoBehaviour:
   sidewaysForce: 30
   forwardInair: 50
   sidewaysInair: 30
-  jumpForce: 4
+  jumpForce: 5
   col: {fileID: 2937425013412629723}
   sideForceController: 7
   sideAirForceController: 5

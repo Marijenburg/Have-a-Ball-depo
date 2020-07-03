@@ -20,8 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource rollingSound;
     public AudioSource landingSound;
     public AudioSource powerUp;
-    
-   
+
 
     void FixedUpdate()
     {
@@ -65,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-            
+   
 
    
     public void RollingSound()
@@ -81,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rollingSound.Stop();
         }
+      
        if (rollingSound.isPlaying)
         {
             if (Time.timeScale==0)
