@@ -54,7 +54,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2362315785513932718}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -142,7 +142,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyedVersion: {fileID: 1075345190804171158, guid: 4b4089a55294ea74abb08dbf9fef61b5,
     type: 3}
-  powerUp: {fileID: 0}
 --- !u!114 &3525284288429920418
 MonoBehaviour:
   m_ObjectHideFlags: 0
