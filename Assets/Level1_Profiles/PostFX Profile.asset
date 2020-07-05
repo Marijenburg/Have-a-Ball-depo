@@ -1311,6 +1311,50 @@ MonoBehaviour:
       - 0.5
       - 0.5
       - 0.5
+--- !u!114 &-6197586134767054056
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 1
+    value: 0
+  color:
+    overrideState: 0
+    value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    overrideState: 0
+    value: {x: 0.5, y: 0.5}
+  intensity:
+    overrideState: 1
+    value: 0.275
+  smoothness:
+    overrideState: 1
+    value: 0.535
+  roundness:
+    overrideState: 1
+    value: 0.773
+  rounded:
+    overrideState: 0
+    value: 0
+  mask:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  opacity:
+    overrideState: 0
+    value: 1
 --- !u!114 &-3546988483378284916
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1341,7 +1385,7 @@ MonoBehaviour:
     value: 8
   maximumMarchDistance:
     overrideState: 1
-    value: 104.71
+    value: 108.94
   distanceFade:
     overrideState: 0
     value: 0.228
@@ -1414,6 +1458,7 @@ MonoBehaviour:
   - {fileID: 992883851805578151}
   - {fileID: 6137483895147228490}
   - {fileID: -3546988483378284916}
+  - {fileID: -6197586134767054056}
 --- !u!114 &992883851805578151
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1481,15 +1526,15 @@ MonoBehaviour:
     value: 1
   focusDistance:
     overrideState: 1
-    value: 4
+    value: 4.33
   aperture:
     overrideState: 0
     value: 3.8
   focalLength:
-    overrideState: 0
+    overrideState: 1
     value: 52
   kernelSize:
-    overrideState: 0
+    overrideState: 1
     value: 3
 --- !u!114 &6137483895147228490
 MonoBehaviour:
@@ -1509,7 +1554,7 @@ MonoBehaviour:
     value: 1
   shutterAngle:
     overrideState: 1
-    value: 209
+    value: 162
   sampleCount:
     overrideState: 1
     value: 14
