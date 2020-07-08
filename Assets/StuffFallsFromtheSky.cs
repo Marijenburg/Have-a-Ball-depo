@@ -14,7 +14,7 @@ public class StuffFallsFromtheSky : MonoBehaviour
             if (isTriggered == false)
 
             Debug.Log("touch the FTHING");
-            Instantiate(sphere1, new Vector3(0,40, 600), Quaternion.identity);
+            Instantiate(sphere1, new Vector3(0,45, 600), Quaternion.identity);
 
             isTriggered = true;
 
