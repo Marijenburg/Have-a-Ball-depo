@@ -105,7 +105,7 @@ MonoBehaviour:
     m_Bits: 1
   rb: {fileID: 2937425013412629724}
   forwardForce: 100
-  edgeForwardForce: 15
+  edgeForwardForce: 19.5
   edgeForwardForceInair: 11
   sidewaysForce: 30
   forwardInair: 50
@@ -118,6 +118,8 @@ MonoBehaviour:
   rollingSound: {fileID: 1148331453}
   landingSound: {fileID: 174449087}
   powerUp: {fileID: 6669452457013842465}
+  landingEffect: {fileID: 257713944796155707, guid: 479959c05f62c1c4da6d0aeee38a0e47,
+    type: 3}
 --- !u!54 &2937425013412629724
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -186,7 +188,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 90511b3e83c47824fa61f324ab2f4e5a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.627
+  m_Volume: 0.672
   m_Pitch: -0.12
   Loop: 0
   Mute: 0
@@ -354,7 +356,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6ff59b748fda11942a100a666aee7dfe, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.779
+  m_Volume: 0.831
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -450,7 +452,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 816325b7b3548e941b7896943319e773, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.293
+  m_Volume: 0.364
   m_Pitch: 0.77
   Loop: 0
   Mute: 0
@@ -546,8 +548,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 07829b506e35d8647afbdea9442a3e11, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.339
-  m_Pitch: 1.46
+  m_Volume: 0.423
+  m_Pitch: 1.03
   Loop: 0
   Mute: 0
   Spatialize: 0
