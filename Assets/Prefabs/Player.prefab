@@ -118,7 +118,7 @@ MonoBehaviour:
   rollingSound: {fileID: 1148331453}
   landingSound: {fileID: 174449087}
   powerUp: {fileID: 6669452457013842465}
-  landingEffect: {fileID: 257713944796155707, guid: 479959c05f62c1c4da6d0aeee38a0e47,
+  landingEffect: {fileID: 5767554765012881436, guid: 11dc9e11175df3a4890119183f9b1e7a,
     type: 3}
 --- !u!54 &2937425013412629724
 Rigidbody:

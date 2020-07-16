@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource rollingSound;
     public AudioSource landingSound;
     public AudioSource powerUp;
-    public GameObject landingEffect;
+    
 
 
     void FixedUpdate()
@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
             {
 
                 landingSound.Play();
-                Instantiate(landingEffect, rb.transform.position,Quaternion.Euler(90f, 0f,0f) );
+                
                 Debug.Log("sound landing PLAY");
             }
         }
