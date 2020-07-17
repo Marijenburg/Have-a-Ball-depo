@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     public void TimerStart()
     {
         timeStart += Time.deltaTime;
-        print(timeStart);
+      
         textBox.text = timeStart.ToString("0.00");
     }
 
