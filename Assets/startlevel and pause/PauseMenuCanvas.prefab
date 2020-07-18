@@ -447,7 +447,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 99}
+  m_AnchoredPosition: {x: 0, y: 91}
   m_SizeDelta: {x: 211.6, y: 68.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6518326611612612386
@@ -1621,8 +1621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 8949678338465754470}
-  pauseFirstButton: {fileID: 0}
-  optionsFirstButton: {fileID: 0}
+  canvasYourTime: {fileID: 0}
+  playerRollingSound: {fileID: 0}
 --- !u!1 &8949678339754310227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,7 +1659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 99}
+  m_AnchoredPosition: {x: 0, y: 89}
   m_SizeDelta: {x: 211.6, y: 68.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8949678339754310231
@@ -2110,7 +2110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 190}
+  m_AnchoredPosition: {x: 7, y: 158}
   m_SizeDelta: {x: 795.9, y: 78.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8949678340106403029

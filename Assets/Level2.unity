@@ -15649,11 +15649,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: YourTime
       objectReference: {fileID: 0}
-    - target: {fileID: 2927163806219104608, guid: cc3b218069a92b543aa526e21b43dfc4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2927163806219104612, guid: cc3b218069a92b543aa526e21b43dfc4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15766,29 +15761,14 @@ PrefabInstance:
       objectReference: {fileID: 226503610}
     - target: {fileID: 2927163806219104613, guid: cc3b218069a92b543aa526e21b43dfc4,
         type: 3}
-      propertyPath: timerScript
-      value: 
-      objectReference: {fileID: 88698565}
-    - target: {fileID: 2927163806219104613, guid: cc3b218069a92b543aa526e21b43dfc4,
-        type: 3}
       propertyPath: secondsDisplay
       value: 
       objectReference: {fileID: 1614321490}
     - target: {fileID: 2927163806219104613, guid: cc3b218069a92b543aa526e21b43dfc4,
         type: 3}
-      propertyPath: seconds100Display
+      propertyPath: timerScript
       value: 
-      objectReference: {fileID: 341434108}
-    - target: {fileID: 2927163807838215976, guid: cc3b218069a92b543aa526e21b43dfc4,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -29.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2927163807838215976, guid: cc3b218069a92b543aa526e21b43dfc4,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -16.58728
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 88698565}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc3b218069a92b543aa526e21b43dfc4, type: 3}
 --- !u!1001 &1026843919
@@ -21489,6 +21469,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -40.28, y: 152.1, z: -13.015}
+--- !u!82 &1653300967 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1148331453, guid: c859dcf8e6062b741af51053f8c762d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1993629706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1655939865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26665,10 +26651,15 @@ PrefabInstance:
       propertyPath: canvasYourTime
       value: 
       objectReference: {fileID: 65647726}
+    - target: {fileID: 8949678339749884976, guid: a862e879b960af045b76b2e134b87b87,
+        type: 3}
+      propertyPath: playerRollingSound
+      value: 
+      objectReference: {fileID: 1653300967}
     - target: {fileID: 8949678340106403027, guid: a862e879b960af045b76b2e134b87b87,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 190
+      value: 159
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a862e879b960af045b76b2e134b87b87, type: 3}

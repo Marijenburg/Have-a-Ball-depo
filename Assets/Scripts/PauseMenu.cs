@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public GameObject canvasYourTime;
+    public AudioSource playerRollingSound;
    
 
    
@@ -146,6 +147,7 @@ public class PauseMenu : MonoBehaviour
         canvasYourTime.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        playerRollingSound.Pause();
         
         GetComponent<StartLevel>().enabled = false;
       
