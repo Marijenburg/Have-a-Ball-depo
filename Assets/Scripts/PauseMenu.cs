@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
 
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject canvasYourTime;
    
 
    
@@ -132,6 +133,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        canvasYourTime.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
         GetComponent<StartLevel>().enabled = false;
@@ -139,10 +141,9 @@ public class PauseMenu : MonoBehaviour
     }
     void Pause ()
     {    
-      
-      
            
         pauseMenuUI.SetActive(true);
+        canvasYourTime.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
         

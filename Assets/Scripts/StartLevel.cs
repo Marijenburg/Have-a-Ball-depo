@@ -1,82 +1,76 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class StartLevel : MonoBehaviour
 {
-    
+    public Timer time;
+    public Timer yourTime;
     public GameObject canvasObject;
+    public GameObject canvasYourTime;
     // Start is called before the first frame update
     void Start()
-    {
+    {      
         Time.timeScale = 0f;
         Cursor.visible = false;
+       
     }
-
+    void GOGOGO()
+    {
+        time.TimerStart();
+        yourTime.TimerStart();
+        canvasObject.SetActive(false);
+        canvasYourTime.SetActive(false);
+        Time.timeScale = 1f;
+    }
+    void Pause()
+    {
+        time.TimerStop();
+        yourTime.TimerStop();
+        canvasObject.SetActive(false);
+        canvasYourTime.SetActive(true);
+        Time.timeScale = 0f;
+    }
     // Update is called once per frame
     void Update()
     {
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-
-            canvasObject.SetActive(false);            
-
+            Pause();
         }
         if (Input.GetKeyDown("p"))
         {
-
-            canvasObject.SetActive(false);
-
+            Pause();
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            
-            canvasObject.SetActive(false);
-            Time.timeScale = 1f;
-
+            GOGOGO();
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-
-            canvasObject.SetActive(false);
-            Time.timeScale = 1f;
-
+            GOGOGO();
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-
-            canvasObject.SetActive(false);
-            Time.timeScale = 1f;
-
+            GOGOGO();
         }
         if (Input.GetKey("q"))
         {
-
-            canvasObject.SetActive(false);
-            Time.timeScale = 1f;
-
+            GOGOGO();
         }
         if (Input.GetKey("d"))
         {
-
-            canvasObject.SetActive(false);
-            Time.timeScale = 1f;
-
+            GOGOGO();
         }
         if (Input.GetKey("z"))
         {
-
-            canvasObject.SetActive(false);
-            Time.timeScale = 1f;
-
+            GOGOGO();
         }
         if (Input.GetKey(KeyCode.Joystick1Button1))
         {
-
-            canvasObject.SetActive(false);
-            Time.timeScale = 1f;
-
+            GOGOGO();
         }
 
     }

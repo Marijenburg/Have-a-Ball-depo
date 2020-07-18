@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\rebound.cs" />
     <Compile Include="Assets\StuffFallsFromtheSky.cs" />
     <Compile Include="Assets\StuffFallsLevel3.cs" />
+    <Compile Include="Assets\TImeCalculator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

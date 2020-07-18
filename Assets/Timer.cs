@@ -6,33 +6,64 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timeStart ;
-    public Text textBox;
-    
+    public Text timerMinutes;
+    public Text timerSeconds;
+    public Text timerSeconds100;
 
-    // Start is called before the first frame update
+    private float startTime;
+    private float stopTime;
+    private float timerTime;
+    private bool isRunning = false;
+
+    // Use this for initialization
+    void Start()
+    {
+        TimerReset();
+    }
+
     public void TimerStart()
     {
-        timeStart += Time.deltaTime;
-      
-        textBox.text = timeStart.ToString("0.00");
+        if (!isRunning)
+        {
+            print("START");
+            isRunning = true;
+            startTime = Time.time;
+        }
     }
 
-    public void TimerStops()
+    public void TimerStop()
     {
+        if (isRunning)
+        {
+            print("STOP");
+            isRunning = false;
+            stopTime = timerTime;
+        }
+    }
 
-    }
-    public void SetTimerToZero()
+    public void TimerReset()
     {
-        textBox.text = "0";
+        print("RESET");
+        stopTime = 0;
+        isRunning = false;
+        timerMinutes.text = timerSeconds.text = timerSeconds100.text = "00";
     }
+
     // Update is called once per frame
     void Update()
     {
-        TimerStart();
-       
-    }
-   
+        timerTime = stopTime + (Time.time - startTime);
+        int minutesInt = (int)timerTime / 60;
+        int secondsInt = (int)timerTime % 60;
+        int seconds100Int = (int)(Mathf.Floor((timerTime - (secondsInt + minutesInt * 60)) * 100));
 
+        if (isRunning)
+        {
+            timerMinutes.text = (minutesInt < 10) ? "0" + minutesInt : minutesInt.ToString();
+            timerSeconds.text = (secondsInt < 10) ? "0" + secondsInt : secondsInt.ToString();
+            timerSeconds100.text = (seconds100Int < 10) ? "0" + seconds100Int : seconds100Int.ToString();
+        }
+    }
 }
+
 

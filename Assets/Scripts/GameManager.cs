@@ -5,15 +5,17 @@ public class GameManager : MonoBehaviour {
 
     bool gameHasEnded = false;
 
-    public float restartDelay = 10f;
+    public float restartDelay = 30f;
 
     public GameObject completeLevelUI;
+    public GameObject canvasYourTime;
 
 
 
     public void CompleteLevel ()
                    {
         completeLevelUI.SetActive(true);
+        
         
                      }
 
