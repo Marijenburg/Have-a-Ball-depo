@@ -7,7 +7,7 @@ public class StartLevel : MonoBehaviour
 {
     public Timer time;
     public Timer yourTime;
-    public GameObject canvasObject;
+    public GameObject readyCanvas;
     public GameObject canvasYourTime;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class StartLevel : MonoBehaviour
     {
         time.TimerStart();
         yourTime.TimerStart();
-        canvasObject.SetActive(false);
+        readyCanvas.SetActive(false);
         canvasYourTime.SetActive(false);
         Time.timeScale = 1f;
     }
@@ -28,7 +28,7 @@ public class StartLevel : MonoBehaviour
     {
         time.TimerStop();
         yourTime.TimerStop();
-        canvasObject.SetActive(false);
+        readyCanvas.SetActive(false);
         canvasYourTime.SetActive(true);
         Time.timeScale = 0f;
     }

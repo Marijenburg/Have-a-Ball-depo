@@ -151,7 +151,7 @@ public class PlayerMovement : MonoBehaviour
     }   
     private void Jump()
     {
-        if (IsGrounded() && Input.GetKeyUp(KeyCode.Space))
+        if (IsGrounded() && Input.GetKey(KeyCode.Space))
 
         {
             {

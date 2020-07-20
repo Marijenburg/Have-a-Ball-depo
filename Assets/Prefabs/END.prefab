@@ -108,6 +108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  time: {fileID: 0}
+  yourTime: {fileID: 0}
+  yourTimeCanvas: {fileID: 0}
 --- !u!1001 &8523379728447209236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -189,7 +192,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 55296d1b6ee54e14e8eb4648d4b448ee, type: 2}
+      objectReference: {fileID: 2100000, guid: 45de57a8a620d3c48a298737dca6b1f9, type: 2}
     - target: {fileID: 3906749834274322271, guid: cd1ba5094dec61446874017e0f3451bf,
         type: 3}
       propertyPath: m_Mesh

@@ -107,7 +107,7 @@ MonoBehaviour:
   forwardForce: 100
   edgeForwardForce: 19.5
   edgeForwardForceInair: 11
-  sidewaysForce: 30
+  sidewaysForce: 32
   forwardInair: 50
   sidewaysInair: 30
   jumpForce: 5
@@ -118,8 +118,6 @@ MonoBehaviour:
   rollingSound: {fileID: 1148331453}
   landingSound: {fileID: 174449087}
   powerUp: {fileID: 6669452457013842465}
-  landingEffect: {fileID: 5767554765012881436, guid: 11dc9e11175df3a4890119183f9b1e7a,
-    type: 3}
 --- !u!54 &2937425013412629724
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -549,7 +547,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 07829b506e35d8647afbdea9442a3e11, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.423
-  m_Pitch: 1.03
+  m_Pitch: 1.11
   Loop: 0
   Mute: 0
   Spatialize: 0
