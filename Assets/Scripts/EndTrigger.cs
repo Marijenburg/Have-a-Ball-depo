@@ -24,4 +24,5 @@ public class EndTrigger : MonoBehaviour
                  gameManager.CompleteLevel();
     
              }
+   
 }
