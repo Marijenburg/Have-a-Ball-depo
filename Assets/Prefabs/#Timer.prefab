@@ -87,10 +87,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9116652554516536886}
+  - component: {fileID: 4395710912985189664}
   - component: {fileID: 8337003796709129865}
   - component: {fileID: 8749135960779223544}
   - component: {fileID: 5613627766536534517}
-  - component: {fileID: 4395710912985189664}
   m_Layer: 0
   m_Name: 'Timer '
   m_TagString: Untagged
@@ -118,6 +118,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &4395710912985189664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3589305029223086693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1593ecdc33c19b74daab9829ac2fe965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerMinutes: {fileID: 5377132149185652098}
+  timerSeconds: {fileID: 562609292659805799}
+  timerSeconds100: {fileID: 3120494191599047929}
 --- !u!223 &8337003796709129865
 Canvas:
   m_ObjectHideFlags: 0
@@ -178,21 +193,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4395710912985189664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3589305029223086693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1593ecdc33c19b74daab9829ac2fe965, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerMinutes: {fileID: 5377132149185652098}
-  timerSeconds: {fileID: 562609292659805799}
-  timerSeconds100: {fileID: 3120494191599047929}
 --- !u!1 &4936815704716243371
 GameObject:
   m_ObjectHideFlags: 0

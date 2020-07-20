@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2520901999799045351}
   - component: {fileID: 2520901999799045345}
   m_Layer: 0
-  m_Name: StartLevel
+  m_Name: '#StartLevel'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: {fileID: 0}
   yourTime: {fileID: 0}
-  canvasObject: {fileID: 0}
+  readyCanvas: {fileID: 0}
   canvasYourTime: {fileID: 0}
 --- !u!95 &2520901999799045345
 Animator:

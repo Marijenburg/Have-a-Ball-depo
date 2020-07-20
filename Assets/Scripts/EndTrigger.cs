@@ -8,6 +8,8 @@ public class EndTrigger : MonoBehaviour
     public Timer time;
     public Timer yourTime;
     public GameObject yourTimeCanvas;
+    public GameObject timerCanvas;
+    
     
 
             void OnTriggerEnter(Collider other)
@@ -17,6 +19,7 @@ public class EndTrigger : MonoBehaviour
                if (other.CompareTag("Player"))
                    time.TimerStop();
                     yourTime.TimerStop();
+                timerCanvas.SetActive(false);
                  yourTimeCanvas.SetActive(true);
                  gameManager.CompleteLevel();
     
