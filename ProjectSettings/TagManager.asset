@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Obstacle
   - cubedestructible
+  - Bullet
+  - SpeedBoost
+  - JumpPad
   layers:
   - Default
   - TransparentFX

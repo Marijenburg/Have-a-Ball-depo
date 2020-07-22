@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditorInternal;
+using UnityEngine;
 using UnityEngine.Audio;
 
 public class PlayerMovement : MonoBehaviour
@@ -7,12 +8,15 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayers;
     public Rigidbody rb;
     public float forwardForce = 40f;
+    private float currentForce;
     public float edgeForwardForce = 10f;
+    private float currentEdgeForwardForce;
     public float edgeForwardForceInair = 100f;
     public float sidewaysForce = 25f;
     public float forwardInair = 300f;
     public float sidewaysInair = 300f;
     public float jumpForce = 12f;
+    private float currentJumpForce;
     public SphereCollider col;
     public float sideForceController = 2f;
     public float sideAirForceController = 1f;
@@ -20,8 +24,15 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource rollingSound;
     public AudioSource landingSound;
     public AudioSource powerUp;
-    
 
+    private void Start()
+    {
+        //En rapport au Switch plus bas pour le jumppad et speedboost
+        //Pour quand on est pas sur les plateformes, que les forces soient normales
+        currentForce = forwardForce;
+        currentEdgeForwardForce = edgeForwardForce;
+        currentJumpForce = jumpForce;
+    }
 
     void FixedUpdate()
     {
@@ -65,6 +76,24 @@ public class PlayerMovement : MonoBehaviour
                 Debug.Log("sound landing PLAY");
             }
         }
+        switch (collision.gameObject.tag)
+        {
+            case "SpeedBoost":
+                landingSound.Play();
+                forwardForce = 350f;
+                edgeForwardForce = 55f;
+                break;
+            case "JumpPad":
+                landingSound.Play();
+                jumpForce = 100f;
+                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);               
+                break;
+            case "Ground":
+                jumpForce = currentJumpForce;
+                forwardForce = currentForce;
+                edgeForwardForce = currentEdgeForwardForce;
+                break;
+        }
     }
    
 
@@ -95,7 +124,7 @@ public class PlayerMovement : MonoBehaviour
     private void JumpWithController()
     {
         //jump with controller
-        if (IsGrounded() && Input.GetKey(KeyCode.Joystick1Button0))
+        if (IsGrounded() && Input.GetKeyUp(KeyCode.Joystick1Button0))
 
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
@@ -151,7 +180,7 @@ public class PlayerMovement : MonoBehaviour
     }   
     private void Jump()
     {
-        if (IsGrounded() && Input.GetKey(KeyCode.Space))
+        if (IsGrounded() && Input.GetKeyUp(KeyCode.Space))
 
         {
             {
@@ -164,6 +193,8 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+
+   
     /*private void MovingAround()
     {
            
